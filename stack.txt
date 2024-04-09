@@ -1,0 +1,113 @@
+#Lifo :- Last in first out/Filo :- first in last out 
+
+#inmplementation :-
+
+eg:-1)
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+
+        System.out.println(st.peek());
+    }
+}
+
+eg:-2) print a stack
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+        System.out.println(st);
+    }
+}
+
+eg;-3) remove  element in stack
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+       
+        System.out.println(st);
+        st.pop();
+        System.out.println(st);
+        st.pop();
+        System.out.println(st);
+        
+    }
+}
+
+eg :-4) know size of stack
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+        System.out.println(st);
+        System.out.println("size of a stack :- "+st.size());
+    }
+}
+
+# to print a particular element
+
+eg :-1)
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+        while (st.size() > 1){
+            st.pop();
+        }
+        System.out.println(st.peek());
+        //and
+        System.out.println(st);
+    }
+}
+
+eg :-2) 
+import java.util.Stack;
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+        st.push(1);
+        st.push(23);
+        st.push(12);
+        st.push(77);
+        st.push(111);
+        System.out.println("size of a stack :- "+st.size());
+        while (st.size() > 3){
+            st.pop();
+        }
+        System.out.print("to print only element = ");
+        System.out.println(st.peek());
+        //and
+        System.out.print("to print stack = ");
+        System.out.println(st);
+    }
+}
+
+# stack.isEmpty()
